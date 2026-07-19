@@ -1,18 +1,17 @@
-import React, { useContext } from 'react'
+import React, {  lazy, Suspense } from "react";
 import {Routes, Route, replace  } from 'react-router-dom'
 import {Toaster} from 'react-hot-toast'
-
-import Login from './pages/Auth/Login'
-import Signup from './pages/Auth/Signup'
-import ProtectedRoute from './components/ProtectedRoutes' 
-import LandingPage from './pages/LandingPage'
-import Dashboard from './pages/Home/Dashboard'
-import InterviewPrep from './pages/InterviewPrep/InterviewPrep'
-import { userDataContext } from './context/userContextAll'
 import Shimmer from './components/Shimmer'
 import { Navigate } from 'react-router-dom'
 
 
+import ProtectedRoute from './components/ProtectedRoutes' 
+import LandingPage from './pages/LandingPage'
+
+//lazy loaded components
+
+const Dashboard = lazy(() => import("./pages/Home/Dashboard"));
+const InterviewPrep = lazy(() => import("./pages/InterviewPrep/InterviewPrep"));
 
 
 
@@ -21,7 +20,7 @@ export default function App() {
 
   return (
 <>
-
+      <Suspense fallback={<Shimmer />}>
 <Routes>
 
    <Route  path='/'   element={<LandingPage/>} />
@@ -33,14 +32,15 @@ export default function App() {
  <Route  path='*' element={ <Navigate to='/'  replace /> }   />
 </Routes>
 
+     </Suspense>
+
 <Toaster
 toastOptions={{
   className:'',
-  style:{ fontSize : '15px' }
+  style:{ fontSize : '16px' }
 }}
 
 />
-
 
 </>
 

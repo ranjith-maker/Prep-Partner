@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import {LuSparkles} from 'react-icons/lu'
-import HERO_IMG from '../assets/hero-img.png'
+import HERO_IMG from '../assets/hero-img.avif'
 import { APP_FEATURES } from '../utils/data'
 import Signup from './Auth/Signup'
 import Login from './Auth/Login'
@@ -50,16 +50,11 @@ export default function LandingPage() {
 
 
           {
-            userDetails 
-
-            ? 
-
+            userDetails  ? 
             (
               <ProfileInfoCard/>
             )
-
             :
-
             (
               <button
               onClick={()=>setOpenAuthModal(true)}
@@ -72,8 +67,6 @@ export default function LandingPage() {
 
 
         </header>
-
-
 
         {/* Hero */}
 

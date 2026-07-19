@@ -17,32 +17,40 @@ export default function SummaryCard ({
  
  
 return (
-  <div
-    onClick={onSelect}
-    className="relative overflow-hidden rounded-xl border border-gray-300/40 bg-white p-2 shadow-orange-200  group cursor-pointer  hover:-translate-y-1 hover:shadow-xl transition-all duration-300                         "
-  >
-    {/* Header */}
-    <div
-      style={{ background: colors.bgcolor }}
-      className="relative rounded-lg p-4"
-    >
-      <div className="flex items-start gap-4">
-        {/* Avatar */}
-        <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-white">
-          <span className="text-lg font-semibold text-black">
-          {getInitials(role)  }
+  <div 
+  onClick={onSelect}
+   className="relative overflow-hidden rounded-xl border border-gray-200 bg-white p-2 shadow-sm group cursor-pointer hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
 
+
+    {/* Header */}
+
+    <div style={{ background: colors.bgcolor }} className="relative rounded-lg p-3">
+
+      <div className="flex items-start gap-3">
+
+        {/* Avatar */}
+         <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-white">
+
+          <span className="text-base font-semibold text-black">
+            {getInitials(role)}
           </span>
+
         </div>
 
-        {/* Content */}
-        <div className="flex-1">
-          <h2 className="text-[17px] font-medium">{role}</h2>
+         {/* Content */}
 
-          <p className="mt-1 text-sm text-gray-700">
+        <div className="flex-1 min-w-0">
+
+          <h2 className="text-[15px] font-semibold truncate">
+            {role}
+          </h2>
+
+          <p className="mt-1 text-xs text-gray-700 line-clamp-2">
             {topicsToFocus}
           </p>
+
         </div>
+
       </div>
 
       {/* Delete Button */}
@@ -57,27 +65,35 @@ return (
       </button>
     </div>
 
-    {/* Footer */}
-    <div className="px-3 pb-3">
-      <div className="mt-4 flex flex-wrap gap-3">
-        <div className="rounded-full border border-gray-900 px-3 py-1 text-[12px] font-medium">
+    
+
+
+    {/* Body */}
+
+    <div className="px-2 pb-2">
+
+      <div className="mt-3 flex flex-wrap gap-2">
+
+        <div className="rounded-full border border-gray-300 px-2.5 py-1 text-[11px] font-medium">
           Experience: {experience} {experience === 1 ? "Year" : "Years"}
         </div>
 
-        <div className="rounded-full border border-gray-900 px-3 py-1 text-[12px] font-medium">
+        <div className="rounded-full border border-gray-300 px-2.5 py-1 text-[11px] font-medium">
           {questions} Q&A
         </div>
 
-        <div className="rounded-full border border-gray-900 px-3 py-1 text-[12px] font-medium">
-          Last Updated: {lastUpdated}
-        </div>
-      </div>
 
-      {/* Description */}
-      <p className="mt-3 line-clamp-2 text-[12px] font-medium text-gray-500">
+        <div className="rounded-full border border-gray-300 px-2.5 py-1 text-[11px] font-medium">
+          Updated: {lastUpdated}
+        </div>
+
+      </div>
+      <p className="mt-3 line-clamp-2 text-xs font-medium text-gray-500">
         {description}
       </p>
+
     </div>
+
   </div>
 );
 }

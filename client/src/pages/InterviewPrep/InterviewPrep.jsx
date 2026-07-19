@@ -15,6 +15,7 @@ import LearnMore from './components/LearnMore'
 import SkeletonLoader from './components/SkeletonLoader'
 
 
+
 export default function InterviewPrep() {
 
 const {sessionId} = useParams()
@@ -189,12 +190,16 @@ useEffect(()=>{
        />
 
 
-       <div className=' container mx-auto pt-4 pb-4 px-4 md:px-0  ' >
-          <h2 className=' text-lg font-semibold color-black ' > Interview Q & A </h2>
-            <div className='grid grid-cols-12 gap-4 mt-5 mb-10  ' >
-              <div
-              className={` col-span-12 ${openLearnMore ? 'md:col-span-7' : 'md:col-span-8'} `}
-              >
+            <div className="max-w-6xl mx-auto pt-4 pb-6 px-5">
+
+            <h2 className="text-lg font-semibold text-black">
+                 Interview Q & A
+             </h2>
+ 
+              <div className="grid grid-cols-12 gap-4 mt-5 mb-10">
+              
+              <div 
+              className={`${openLearnMore ? "col-span-12 lg:col-span-8" : "col-span-12 lg:col-span-9"}`}>
                 <AnimatePresence>
                   {sessionData?.questions?.map((data, index)=>{
                     return (

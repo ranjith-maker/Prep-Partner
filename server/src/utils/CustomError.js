@@ -1,5 +1,5 @@
 
-//for every error we write
+//for every error we write business logic errors
 class AppError extends Error {
   constructor(message, statusCode) {
     super(message);
@@ -15,8 +15,8 @@ export default AppError;
 
 
 
-//To not write after catch errorafter response actch(err){next(err)}
-
+//To not write after catch error, global middleware
+//Sends a consistent HTTP error response for all errors
 export const errorHandler = (err, req, res, next) => {
 
   res.status(err.statusCode || 500).json({

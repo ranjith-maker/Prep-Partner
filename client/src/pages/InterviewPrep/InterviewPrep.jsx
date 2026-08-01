@@ -53,7 +53,7 @@ async function fetchSessionDetailsById() {
 }
 
 
-//this api call is for concept explanation
+//this api call is for concept explanation user click learn more
 
 async function generateConceptExplanation(question) {
   
@@ -159,7 +159,7 @@ async function uploadMoreQuestion() {
     if(error.response.data?.message){
       setErrorMsg(error.response.data.message)
     }else{
-      setErrorMsg('Somwthing went wrong try again later')
+      setErrorMsg('Unable to save generated questions. Please try again.')
     }
   } finally{
     setIsUpdateLoader(false)

@@ -29,6 +29,7 @@ export default function App() {
         <Route  path='/dashboard'  element={< Dashboard />}  />
         <Route  path='/interview-prep/:sessionId'  element={<InterviewPrep/>}  />
  </Route> 
+ 
  <Route  path='*' element={ <Navigate to='/'  replace /> }   />
 </Routes>
 

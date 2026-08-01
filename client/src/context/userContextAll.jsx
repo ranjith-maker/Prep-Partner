@@ -34,7 +34,7 @@ setUserdetails(response.data?.data);
 
 }
 catch(error){
-
+// !true false so this code is skipped because nothing actually went wrong you intentionally cancelled the request.
 if(!axios.isCancel(error)){
  console.error(error.response?.data?.message);
  setUserdetails(null);

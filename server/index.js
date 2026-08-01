@@ -7,6 +7,7 @@ import dns from 'dns'
 import cors from 'cors'
 import cookieParser from 'cookie-parser'
 import morgan from 'morgan'
+
 import { errorHandler } from './src/utils/CustomError.js'
 import authRoutes from './src/routes/authRoutes.js'
 import sessionRoutes from './src/routes/sessionRoutes.js'
@@ -49,7 +50,7 @@ app.use(errorHandler)
 
 const PORT = process.env.PORT
 
-// cloudinaryConnect()
+
 ConnectMongoDB()
 .then(()=>{
     console.log('Prep Partner DB connected');

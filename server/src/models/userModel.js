@@ -8,6 +8,8 @@ name : {
         type : String,
         required : true, 
         trim : true,
+        minLength : 3,
+        maxLength : 25
     },
 
 email:{
@@ -15,6 +17,7 @@ email:{
         required : true, 
         trim : true,
         lowercase : true,
+        unique: true,
         validate(value){
             if(!validator.isEmail(value)){
            throw new Error('Email is not valid',value)

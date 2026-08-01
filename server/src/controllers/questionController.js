@@ -72,30 +72,7 @@ if(!question){
 
 
 
-export const updateQuestionNote = catchAsync(async(req,res,next)=>{
 
-const {note} = req.body
-const {id} = req.params
-
-const question = await Question.findById(id)
-
-if(!question){
-  throw new AppError('question not found')
-}  
-
-question.note = note || '',
-
-question.save()
-
-res.status(200).json({
-
-success : true,
-message : 'Notes are updated to this question',
-data : question
-
-})
-
-})
 
 
 

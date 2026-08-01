@@ -17,7 +17,7 @@ if (!validator.isEmail(email)) {
 }
 
 if(!validator.isStrongPassword(password)){
-    throw new AppError('"Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character."',400)
+    throw new AppError("Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character",400)
 }
 
 const existingUser = await User.findOne({ email });
@@ -26,7 +26,7 @@ if(existingUser){
       throw new AppError("User already exist with same emailID, go Login", 400);  
 }
 
-
+//gen salt + hash
 const hashPass = await bcrypt.hash(password ,  12)
 
 const user = await User.create({
@@ -55,7 +55,6 @@ res.status(201).json({
 })
 
 })
-
 
 export const loginUser = catchAsync(async(req ,res,next)=>{
 
@@ -100,6 +99,7 @@ res.status(200).json({
 
 
 })
+
 
 
 export const logoutUser = catchAsync(async(req,res,next)=>{

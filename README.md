@@ -1,4 +1,4 @@
-🚀 Prep-Partner — AI-Powered Interview Preparation
+🚀 Prep-Partner - AI-Powered Interview Preparation
 check my app here - https://prep-partner-frontend.onrender.com/
 check my app demo here - https://youtu.be/4faKp5y6gsI?si=JcTJfngkKBPhM4AA  
 Your personal AI interview preparation partner.
@@ -8,20 +8,20 @@ Prep-Partner is an AI-integrated web application designed to help candidates pre
 Whether you're preparing for your first interview or exploring a new career opportunity, Prep-Partner helps you learn concepts, understand answers in depth, and revisit questions whenever you need them.
 
 ✨ Features
-🤖 AI-Powered Interview Preparation — Uses Google's Gemini LLM to generate relevant interview questions and answers.
-💼 Unlimited Role Exploration — Prepare for interviews across different job roles and domains.
-📝 Customizable Question Generation — Generate as many interview questions as you need for your preparation.
-🧠 In-Depth Explanations — Get detailed, easy-to-understand answers tailored to real interview scenarios rather than just textbook definitions.
-🔄 Revisit Questions Anytime — Review previously generated questions and answers to reinforce your learning.
-🎯 Flexible Learning Experience — Focus on the roles, concepts, and questions that matter most to your career goals.
+🤖 AI-Powered Interview Preparation - Uses Google's Gemini LLM to generate relevant interview questions and answers.
+💼 Unlimited Role Exploration - Prepare for interviews across different job roles and domains.
+📝 Customizable Question Generation - Generate as many interview questions as you need for your preparation.
+🧠 In-Depth Explanations - Get detailed, easy-to-understand answers tailored to real interview scenarios rather than just textbook definitions.
+🔄 Revisit Questions Anytime - Review previously generated questions and answers to reinforce your learning.
+🎯 Flexible Learning Experience - Focus on the roles, concepts, and questions that matter most to your career goals.
 
 🛠️ Tech Stack
 
 Technology	       Purpose
-MongoDB	       Database for storing application data
-Express.js	   Backend API and server-side logic
-React.js	     Interactive user interface
-Node.js	       Backend runtime environment
+MongoDB	       Database for storing application data,
+Express.js	   Backend API and server-side logic,
+React.js	     Interactive user interface,
+Node.js	       Backend runtime environment,
 Google Gemini AI	LLM-powered interview question and answer generation
 
 Core Stack: MERN (MongoDB, Express.js, React.js, Node.js) + Gemini AI

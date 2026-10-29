@@ -1,6 +1,6 @@
 🚀 Prep-Partner — AI-Powered Interview Preparation
 check my app here - https://prep-partner-frontend.onrender.com/
-check my app demo here - 
+check my app demo here - https://youtu.be/4faKp5y6gsI?si=JcTJfngkKBPhM4AA  
 Your personal AI interview preparation partner.
 
 Prep-Partner is an AI-integrated web application designed to help candidates prepare for interviews with confidence. Powered by Google's Gemini LLM and built using the MERN stack, it generates interview questions and detailed, interview-oriented answers for a wide range of roles.

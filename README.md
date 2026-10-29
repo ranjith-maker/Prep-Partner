@@ -27,10 +27,10 @@ Google Gemini AI	LLM-powered interview question and answer generation
 Core Stack: MERN (MongoDB, Express.js, React.js, Node.js) + Gemini AI
 
 ⚙️ How It Works
-Choose a role — Enter the job role or domain you want to prepare for.
-Generate questions — Let Gemini AI generate relevant interview questions and answers.
-Understand the answers — Learn through detailed explanations designed for interview preparation.
-Review and practice — Revisit generated questions and answers whenever you want to strengthen your understanding.
+Choose a role - Enter the job role or domain you want to prepare for.
+Generate questions - Let Gemini AI generate relevant interview questions and answers.
+Understand the answers - Learn through detailed explanations designed for interview preparation.
+Review and practice - Revisit generated questions and answers whenever you want to strengthen your understanding.
 
 Why Prep-Partner?
 Traditional learning resources often provide definitions without explaining how to communicate a concept effectively in an interview.
